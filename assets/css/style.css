@@ -1,0 +1,328 @@
+html,
+body {
+    min-height: 100%;
+}
+h1,
+p {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    width: 100%;
+}
+
+h6 {
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+}
+
+p {
+    font-family: 'Varela Round', sans-serif;
+}
+#banner {
+    transition: top 0.2s ease-in-out;
+}
+
+/* Font Awesome */
+/* Default all icons to be blue */
+.fa,
+.fas,
+.far,
+.fab {
+    color: #17a2b8;
+}
+.fa-fire {
+    text-align: right;
+    font-size: 3rem;
+    color: rgba(250, 44, 44, 0.8);
+    -webkit-text-stroke: 1px darkred;
+    margin: -20px -15px 0px 0px;
+}
+
+.fa-creative-commons-nc,
+.fa-comments,
+.fa-chalkboard-teacher,
+.fa-heart {
+    font-size: 5rem;
+    margin-bottom:10px;
+}
+.fa-quote-left:before {
+    text-align: left;
+}
+.fa-quote-right:before {
+    text-align: right;
+}
+.fa-envelope,
+.fa-envelope:before {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+/* End Font Awesome */
+.spaceBtm {
+    margin-bottom: 25px;
+}
+#faqContainer {
+    margin-bottom: 25px;
+}
+#listBtn {
+    margin: 25px 0px 25px 0px;
+}
+.headInfo {
+    margin: 125px 40px 40px 40px;
+}
+
+#emailFounder {
+    margin: 25px 0px 25px 0px;
+}
+#testimonial {
+    padding: 50px;
+}
+#why {
+    background: #f2f2f2;
+    min-width: 100%;
+    padding: 50px;
+}
+
+.exploreStudiosCity {
+    font-size: 25px;
+}
+
+.navbar {
+    transition: top 0.3s;
+}
+nav {
+    padding: 20px 25px 20px 40px!Important;
+}
+
+.navbar-brand {
+    padding: 0px!Important;
+}
+
+#shootspaceLogo {
+    max-width: 168px;
+}
+
+#headerImage {
+    /* The image used */
+    background-image: url("../images/IMG_9835.jpg");
+    padding: 150px 5px 150px 5px;
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px 66px 0px;
+}
+
+/* #footer {
+    margin: 0px;
+    position: 0;
+    min-width: 100%;
+    flex-shrink: 0;
+} */
+
+.topRow {
+    margin-bottom: 30px;
+}
+
+.bottomRow {
+    margin-bottom: 30px;
+}
+
+#minneapolisStudio {
+    padding: 150px 0px 150px 0px;
+    /* Background image with black gradient from bottom */
+    background-image: url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#minneapolisStudio:hover {
+    padding: 150px 0px 150px 0px;
+    /* Background image with black gradient from bottom */
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#newYorkStudio {
+    padding: 150px 0px 150px 0px;
+    /* Background image with black gradient from bottom */
+    background-image: url("../images/building-cc0-city-89485.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#newYorkStudio:hover {
+    padding: 150px 0px 150px 0px;
+    /* Background image with black gradient from bottom */
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/building-cc0-city-89485.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#losAngelesStudio {
+    padding: 150px 0px 150px 0px;
+    /* Background image with black gradient from bottom */
+    background-image: url("../images/aerial-architectural-design-architecture-1036657.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+#losAngelesStudio:hover {
+    padding: 150px 0px 150px 0px;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/aerial-architectural-design-architecture-1036657.jpg");
+    /* Regular background with no effects */
+    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+
+.packagesCard {
+    margin: 8% 0% 8% 0%;
+}
+.packagesCard {
+    transition: margin-top, 200ms;
+    transition: margin-bottom, 200ms;
+}
+.cardHead {
+    padding-bottom: 0px;
+}
+.cardMain {
+    padding-top: 0px;
+}
+.packagesCard:hover {
+    margin-top: 7%;
+    margin-bottom: 9%;
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+	-mox-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+}
+.subscriptionItem {
+    text-align: left;
+    margin: 25px;
+}
+.switchBilling:hover {
+    color: rgba(250, 44, 44, 0.8);
+}
+.switchBilling {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    #losAngelesStudio,
+    #losAngelesStudio:hover {
+        padding: 150px 0px 150px 0px;
+        margin-top: 25px;
+        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/aerial-architectural-design-architecture-1036657.jpg");
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #newYorkStudio,
+    #newYorkStudio:hover {
+        padding: 150px 0px 150px 0px;
+        /* Background image with black gradient from bottom */
+        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/building-cc0-city-89485.jpg");
+        /* Regular background with no effects */
+        /* background-image: url("../assets/images/IMG_0023.jpg"); */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+    }
+
+    #minneapolisStudio,
+    #minneapolisStudio:hover {
+        padding: 150px 0px 150px 0px;
+        /* Background image with black gradient from bottom */
+        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
+        /* Regular background with no effects */
+        /* background-image: url("../assets/images/IMG_0023.jpg"); */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+    }
+
+    #featuredStudiosHeader {
+        margin-top: 25px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    h4,
+    h5 {
+        padding: 0px 20px 0px 20px;
+    }
+}
