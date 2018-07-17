@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Varela+Round" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+     <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +76,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card packagesCard">
+                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down" data-aos-delay="100">
                     <div class="card-body cardHead">
                         <h3 class="card-title">BASIC</h3>
                         <div class="dropdown-divider"></div>
@@ -94,7 +96,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card packagesCard">
+                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down">
                         <i class="fas fa-fire"></i>
                     <div class="card-body cardHead">
                         <h3 class="card-title">PREMIUM</h3>
@@ -118,7 +120,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card packagesCard">
+                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down" data-aos-delay="200">
                     <div class="card-body cardHead">
                         <h3 class="card-title">CUSTOM</h3>
                         <div class="dropdown-divider"></div>
@@ -225,6 +227,11 @@
     <!-- App Javascript -->
     <script src="assets/javascript/app.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+    <!-- AOS Script -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

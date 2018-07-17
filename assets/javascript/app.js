@@ -4,9 +4,7 @@ $(document).ready(function () {
         var siteConstant = "https://listings.shootspace.io/?q="
         var userSearch = $("#citySearchInput").val();
         userSearch = userSearch.replace(new RegExp(" "), '+')
-        console.log(userSearch)
         window.location.replace(siteConstant + userSearch);
-        console.log(siteConstant + userSearch);
     });
     // Switch Basic Pricing 
     $(document).on("click", ".switchBilling", function () {
@@ -80,19 +78,18 @@ $(document).ready(function () {
 // Hide navbar on scroll down
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 $(document).ready(function() {
+    // Navbar banner animation
     var banner_height = $("#navscroll").height();
     var lastScrollTop = 0;
     $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      var currScrollTop = $(this).scrollTop();
-      if (scroll >= banner_height && currScrollTop > lastScrollTop) {
-        $("#banner").hide();
-        // $("#banner").fadeOut();
-      } else {
-        $("#banner").show();
-        // $("#banner").fadeIn();
-      }
-      lastScrollTop = currScrollTop;
-  
+        var scroll = $(window).scrollTop();
+        var currScrollTop = $(this).scrollTop();
+        if (scroll >= banner_height && currScrollTop > lastScrollTop) {
+            $("#banner").hide(100);
+        } else {
+            $("#banner").show(100);
+        }
+        lastScrollTop = currScrollTop;
     });
-  });
+});
+

@@ -46,9 +46,66 @@ h6 {
 p {
     font-family: 'Varela Round', sans-serif;
 }
+a:hover {
+    text-decoration: none;
+}
 #banner {
     transition: top 0.2s ease-in-out;
 }
+
+/* Hover Shadow Effects */
+.hvr-float-shadow{
+    display:inline-block;
+    vertical-align:middle;
+    -webkit-transform:perspective(1px) translateZ(0);
+    transform:perspective(1px) translateZ(0);
+    box-shadow:0 0 1px rgba(0,0,0,0);
+    position:relative;
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s;
+    -webkit-transition-property:transform;
+    transition-property:transform
+}
+.hvr-float-shadow:before{
+    pointer-events:none;
+    position:absolute;
+    z-index:-1;
+    content:'';
+    top:100%;
+    left:5%;
+    height:10px;
+    width:90%;
+    opacity:0;
+    background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);
+    background:radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);
+    -webkit-transition-duration:.3s;
+    transition-duration:.3s;
+    -webkit-transition-property:transform,opacity;
+    transition-property:transform,opacity
+}
+.hvr-float-shadow:active,.hvr-float-shadow:focus,.hvr-float-shadow:hover{
+    -webkit-transform:translateY(-5px);
+    transform:translateY(-5px)
+}
+.hvr-float-shadow:active:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:hover:before{
+    opacity:1;
+    -webkit-transform:translateY(5px);
+    transform:translateY(5px)
+}
+.packagesCard:hover {
+    margin-top: 7%;
+    margin-bottom: 9%;
+	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+	-mox-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+}
+.packagesCard {
+    margin: 8% 0% 8% 0%;
+}
+/* .packagesCard {
+    animation: margin-top, 1000ms;
+    animation: margin-bottom, 1000ms;
+} */
 
 /* Font Awesome */
 /* Default all icons to be blue */
@@ -109,7 +166,18 @@ p {
     min-width: 100%;
     padding: 50px;
 }
+#howItWorks {
+    background: #f2f2f2;
+    min-width: 100%;
+    padding: 200px 0px 0px 200px;
+}
 
+.steps {
+    padding: 25px;
+    border: 1px solid black;
+    min-width: 100%;
+    margin: 20px 0px 20px 0px;
+}
 .exploreStudiosCity {
     font-size: 25px;
 }
@@ -240,25 +308,11 @@ nav {
     margin: 0px;
 }
 
-.packagesCard {
-    margin: 8% 0% 8% 0%;
-}
-.packagesCard {
-    transition: margin-top, 200ms;
-    transition: margin-bottom, 200ms;
-}
 .cardHead {
     padding-bottom: 0px;
 }
 .cardMain {
     padding-top: 0px;
-}
-.packagesCard:hover {
-    margin-top: 7%;
-    margin-bottom: 9%;
-	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
-	-mox-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
-	box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
 }
 .subscriptionItem {
     text-align: left;
