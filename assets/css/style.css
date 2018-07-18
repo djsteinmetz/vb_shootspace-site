@@ -21,7 +21,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-family: 'Varela Round', sans-serif;
-    text-align: center;
+    text-align: left;
 }
 
 h4 {
@@ -49,6 +49,21 @@ p {
 a:hover {
     text-decoration: none;
 }
+
+/* Padding settings */
+.paddingTop {
+    padding-top: 50px;
+}
+.paddingBtm {
+    padding-bottom: 50px;
+}
+.paddingRt {
+    padding-right: 50px;
+}
+.paddingLt {
+    padding-left: 50px;
+}
+
 #banner {
     transition: top 0.2s ease-in-out;
 }
@@ -145,6 +160,9 @@ a:hover {
 .spaceBtm {
     margin-bottom: 25px;
 }
+.paddingTop {
+    padding-top: 50px;
+}
 #faqContainer {
     margin-bottom: 25px;
 }
@@ -167,11 +185,29 @@ a:hover {
     padding: 50px;
 }
 
+#how {
+    width: 100%;
+    min-width: 100%;
+    background: #f2f2f2;
+    margin: 0px;
+
+}
+
 .steps {
     padding: 25px;
     border: 1px solid black;
     min-width: 100%;
-    margin: 20px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
+}
+.stepsCopy {
+    font-size: 5rem;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+.horizontalLine {
+    border-top: 8px solid black;
+    width: 15rem;
 }
 .exploreStudiosCity {
     font-size: 25px;
