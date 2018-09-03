@@ -15,7 +15,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
      <!-- AOS CDN -->
@@ -67,28 +67,28 @@
     </div>
 
     <!-- MAIN BODY CONTENT -->
-    <div class="container">
+    <div class="container" id="main">
         <div class="row headInfo">
             <div class="col-md-12">
                 <h2>Studio marketing that is right for you</h2>
-                <h3>From home studios to top-line studios, we handle your studio marketing and generate more bookings.</h3>
+                <h3 class="text-center" style="font-weight:300">From home studios to top-line studios, we handle your studio marketing and generate more bookings.</h3>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down" data-aos-delay="100">
+                <div class="card packagesCard hvr-float-shadow" style="width: 18rem">
                     <div class="card-body cardHead">
-                        <h3 class="card-title">BASIC</h3>
+                        <h3 class="card-title text-center">BASIC</h3>
                         <div class="dropdown-divider"></div>
                     </div>
                     <div class="card-body cardMain text-center">
                         <div class="card-text" id="basicSemiAnnualPrice">
-                            <h2>$23/month</h2><h6>Semi-Annual</br>Billed every 6mo - save 20%</h6>
+                            <h2>$23/month</h2><h6 class="price">Semi-Annual<br />Billed every 6mo - save 20%</h6>
                         </div>
                         <div class="dropdown-divider"></div>
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;One Studio Listing</h5>
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Booking Tools</h5>
-                        <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Artist Messaging System</h5>
+                        <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Photographer Messaging System</h5>
                         <a href="#"  class="btn btn-lg btn-info" id="basicBtn">GET BASIC NOW</a>
                         <div class="dropdown-divider"></div>
                         <h5 class="switchBilling" id="switchToAnnual"><i class="fas fa-angle-right"></i>&nbsp;Switch to Annual Billing</a></h5>
@@ -96,16 +96,16 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down">
+                <div class="card packagesCard hvr-float-shadow" style="width: 18rem">
                         <i class="fas fa-fire"></i>
                     <div class="card-body cardHead">
-                        <h3 class="card-title">PREMIUM</h3>
+                        <h3 class="card-title text-center">PREMIUM</h3>
                         <h6 class="text-center">(Most Popular)</h6>
                         <div class="dropdown-divider"></div>
                     </div>
                     <div class="card-body cardMain text-center">
                         <div class="card-text" id="premiumSemiAnnualPrice">
-                            <h2>$159/month</h2><h6>Semi-Annual</br>Billed every 6mo - save 20%</h6>
+                            <h2>$159/month</h2><h6 class="price">Semi-Annual<br />Billed every 6mo - save 20%</h6>
                         </div>
                         <div class="dropdown-divider"></div>
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Multiple Studio Listings</h5>
@@ -120,9 +120,9 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="card packagesCard hvr-float-shadow" data-aos="flip-down" data-aos-delay="200">
+                <div class="card packagesCard hvr-float-shadow" style="width: 18rem">
                     <div class="card-body cardHead">
-                        <h3 class="card-title">CUSTOM</h3>
+                        <h3 class="card-title text-center">CUSTOM</h3>
                         <div class="dropdown-divider"></div>
                     </div>
                     <div class="card-body cardMain text-center">
@@ -131,7 +131,7 @@
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Premium Features</h5>
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Booking Concierge</h5>
                         <h5 class="subscriptionItem"><i class="fas fa-check"></i>&nbsp;Custom Marketing &amp; Content Campaigns</h5>
-                        <a href="#######"  class="btn btn-lg btn-info">GET CUSTOM NOW</a>
+                        <a href="#######"  class="btn btn-lg btn-info" id="customBtn">GET CUSTOM NOW</a>
                     </div>
                 </div>
             </div>
@@ -139,33 +139,32 @@
     </div>
     <div class="container" id="why">
         <div class="row headInfo">
-            <div class="col-md-12">
-                <h2>Why list your photography studio on Shootspace?</h2>
-                <h3>From home studios to top-line studios, we handle your studio marketing and generate more bookings.</h3>
+            <div class="col-md-12" style="margin-top: 15px">
+                <h2 style="font-size: 2rem; font-weight: 300">Why list your photography studio on Shootspace?</h2>
             </div>
         </div>
         <div class="row spaceBtm">
             <div class="col-md-6 text-center">
                 <i class="fab fa-creative-commons-nc"></i>
-                <h3>Lowest Fees</h3>
-                <h5 class="text-center">Create a listing for $20/month*. You’ll only pay a 5% service fee for bookings. We are the most cost effective and continual revenue generating platforms for music studios.</h5>
+                <h3 class="header">Lowest Fees</h3>
+                <h5 class="text-center descrip">Create a listing for $20/month*. You’ll only pay a 5% service fee for bookings. We are the most cost effective and continual revenue generating platforms for music studios.</h5>
             </div>
             <div class="col-md-6 text-center">
                 <i class="far fa-comments"></i>
-                <h3>Communication Is Easy</h3>
-                <h5>We make it easy to communicate with artists directly on our platform. With our messaging you can screen booking requests, modify dates to suit your schedule, and more before accepting or denying a booking.</h5>
+                <h3 class="header">Communication Is Easy</h3>
+                <h5 class="descrip">We make it easy to communicate with artists directly on our platform. With our messaging you can screen booking requests, modify dates to suit your schedule, and more before accepting or denying a booking.</h5>
             </div>
         </div>
         <div class="row spaceBtm">
             <div class="col-md-6 text-center">
                     <i class="fas fa-chalkboard-teacher"></i>
-                <h3>You're In Control</h3>
-                <h5>You set your availability, pricing, and additional terms for your bookings. You can offer additional services such as an in-house engineer. We put you in control of your studio listing.</h5>
+                <h3 class="header">You're In Control</h3>
+                <h5 class="descrip">You set your availability, pricing, and additional terms for your bookings. You can offer additional services such as an in-house engineer. We put you in control of your studio listing.</h5>
             </div>
             <div class="col-md-6 text-center">
                 <i class="far fa-heart"></i>
-                <h3>We Care</h3>
-                <h5>We're here to provide the best service possible to both you and your studio. You can reach out to our Founder directly at any time for help!</h5>
+                <h3 class="header">We Care</h3>
+                <h5 class="descrip">We're here to provide the best service possible to both you and your studio. You can reach out to our Founder directly at any time for help!</h5>
             </div>
         </div>
         <div class="row">
@@ -177,15 +176,16 @@
     <div class="container" id="testimonial">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-left">
+                <h3 class="text-left testimonialCopy">
                     <i class="fas fa-quote-left"></i>&nbsp;Ipsum do laboris minim voluptate eu fugiat dolor culpa. Id elit occaecat voluptate amet ad laborum cupidatat aute ea velit tempor fugiat. Laborum excepteur exercitation nulla reprehenderit exercitation 
                     ex enim mollit duis fugiat laboris. Consequat voluptate do excepteur irure proident consequat nostrud nisi enim minim duis velit. Eiusmod ea ea nulla et duis eiusmod laborum velit aliqua nulla non cupidatat tempor consequat. Culpa quis enim non duis velit amet adipisicing.
                     <i class="fas fa-quote-right"></i>
                 </h3>
-                <h3 class="text-left">- Customer, Example Studios</h3>
+                <br />
+                <h3 class="text-left testimonialCopy">- Gretchen, Pretty Pics Studio</h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row paddingTop">
             <div class="col-md-12 text-center">
                 <i class="far fa-envelope"></i>
                 <h6 class="text-center">Still not convinced? Email Our Founder&nbsp;<i class="fas fa-angle-right"></i></h6>
@@ -210,7 +210,7 @@
             </div>
         </div>
         <h5>
-            </br>&COPY;ShootSpace 2018</h5>
+            <br />&COPY;ShootSpace 2018</h5>
     </nav>
 
     <!-- Bootstrap CSS -->

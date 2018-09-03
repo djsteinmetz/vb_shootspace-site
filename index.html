@@ -15,7 +15,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <!-- AOS CDN -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
+            <a class="nav-link" href="/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -67,21 +67,20 @@
   <!-- INITIAL JUMBOTRON -->
   <div class="jumbotron jumbotron-fluid" id="headerImage">
     <div class="container">
-      <h1 class="display-4">Space When You Need It</h1>
-      <p class="lead">The Largest Collection Of On-demand Photo Studio Rentals.</p>
+      <h1 class="display-4 tagline">Space When You Need It</h1>
+      <p class="lead tagline">The Largest Collection Of On-demand Photo Studio Rentals.</p>
     </div>
   </div>
   <!-- Explore Studios -->
-  <div class="container">
+  <div class="container" id="exploreStudios">
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-left paddingTop">Explore Studios</h2>
-        <p class="horizontalLine" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"></p>
-        <h3>Find studios in your city, or explore unique studios around the world.</h3>
+        <h3 class="paddingBtm">Find studios in your city, or explore unique studios around the world.</h3>
       </div>
     </div>
     <div class="row topRow">
-      <div class="col-md-12 cityImages" data-aos="fade">
+      <div class="col-md-12 cityImages">
         <a href="https://listings.shootspace.io/?boundingbox=44.890144%2C-93.329163%2C45.05125%2C-93.193794&distance_max=10.420167876452187&lc=44.977753%2C-93.265011&lq=Minneapolis%2C+MN%2C+USA&view=grid"
           target="_blank">
           <p class="exploreStudiosCity" id="minneapolisStudio">Minneapolis, MN</p>
@@ -89,14 +88,14 @@
       </div>
     </div>
     <div class="row bottomRow">
-      <div class="col-md-8 cityImages" data-aos="fade">
+      <div class="col-lg-8 col-md-6 col-sm-12 cityImages" >
         <a href="https://listings.shootspace.io/?boundingbox=40.477399%2C-74.25909%2C40.917577%2C-73.700272&distance_max=33.96698695406565&lc=40.712775%2C-74.005973&lq=New+York%2C+NY%2C+USA&view=grid"
           target="_blank">
           <p class="exploreStudiosCity" id="newYorkStudio">New York, NY
             <br/>(Coming Soon)</p>
         </a>
       </div>
-      <div class="col-md-4 cityImages" data-aos="fade">
+      <div class="col-lg-4 col-md-6 col-sm-12 cityImages">
         <a href="https://listings.shootspace.io/?boundingbox=33.703652%2C-118.668176%2C34.337306%2C-118.155289&distance_max=42.422825464563104&lc=34.052234%2C-118.243685&lq=Los+Angeles%2C+CA%2C+USA&view=grid"
           target="_blank">
           <p class="exploreStudiosCity" id="losAngelesStudio">Los Angeles, CA
@@ -109,29 +108,28 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="text-left paddingTop">How does it work?</h2>
-          <p class="horizontalLine" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom"></p>
+          <h2 class="text-center paddingTop">How does it work?</h2>
         </div>
       </div>
-      <!-- Step 1 -->
-      <div class="row">
-        <div class="col-sm-12" data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom">
-          <h2 class="text-left paddingTop">Step 1: Discover Studios</h2>
-          <h4>Search studios in over 35+ countries and find the right one for you. We also have the best rates and studios for every budget.</h4>
-        </div>
-      </div>
-      <!-- Step 2 -->
-      <div class="row">
-        <div class="col-sm-12" data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="100">
-          <h2 class="text-left paddingTop">Step 2: Do something</h2>
-          <h4>Irure labore labore culpa elit dolore sit sit do aliquip ea aliquip.</h4>
-        </div>
-      </div>
-      <!-- Step 3 -->
-      <div class="row paddingBtm">
-        <div class="col-sm-12" data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="200">
-          <h2 class="text-left paddingTop">Step 3: Rock it out3</h2>
-          <h4>Irure labore labore culpa elit dolore sit sit do aliquip ea aliquip.</h4>
+    </div>
+    <div class="container paddingBtm" id="howDoesItWork">
+      <div class="card-deck-wrapper">
+        <div class="row card-deck">
+        <!-- Step 1 -->
+          <div class="card paddingBtm">
+            <h2 class="text-center paddingTop" style="font-size: 2.4rem">Discover Studios</h2>
+            <h4 class="cardDesc">Search studios in over 35+ countries and find the right one for you. We also have the best rates and studios for every budget.</h4>
+          </div>
+        <!-- Step 2 -->
+          <div class="card paddingBtm">
+            <h2 class="text-center paddingTop" style="font-size: 2.4rem">Do Step 2</h2>
+            <h4 class="cardDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+          </div>
+        <!-- Step 3 -->
+          <div class="card paddingBtm">
+            <h2 class="text-center paddingTop" style="font-size: 2.4rem">Do Step 3</h2>
+            <h4 class="cardDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -151,7 +149,7 @@
       </div>
     </div>
     <h5>
-      </br>&COPY;ShootSpace 2018</h5>
+      <br />&COPY;ShootSpace 2018</h5>
   </nav>
 
   <!-- Bootstrap CSS -->

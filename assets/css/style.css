@@ -1,188 +1,234 @@
-html,
-body {
+html, body {
     min-height: 100%;
 }
-h1,
-p {
+
+h1, p {
     text-align: center;
     color: white;
 }
 
-h1 {
-    font-family: 'Lato', sans-serif;
+h1, .nav-item {
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
-    font-size: 45px;
-    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 h3 {
     font-size: 20px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: left;
 }
 
 h4 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 300;
     width: 100%;
 }
 
 h5 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     width: 100%;
 }
 
 h6 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 p {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 a:hover {
     text-decoration: none;
 }
 
+.price {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: center;
+    font-weight: 400;
+}
+
+.descrip {
+    text-align: center;
+    font-weight: 300;
+    padding: 10px 70px 10px 70px;
+}
+
+.tagline {
+    font-weight: 400;
+}
+
 /* Padding settings */
+
 .paddingTop {
     padding-top: 50px;
 }
+
 .paddingBtm {
     padding-bottom: 50px;
 }
+
 .paddingRt {
     padding-right: 50px;
 }
+
 .paddingLt {
     padding-left: 50px;
+}
+
+/* Margin Settings */
+.marginTop {
+    margin-top: 50px;
+}
+.marginBtm {
+    margin-bottom: 50px;
 }
 
 #banner {
     transition: top 0.2s ease-in-out;
 }
 
+#main {
+    margin-top: 100px;
+}
+
 /* Hover Shadow Effects */
-.hvr-float-shadow{
-    display:inline-block;
-    vertical-align:middle;
-    -webkit-transform:perspective(1px) translateZ(0);
-    transform:perspective(1px) translateZ(0);
-    box-shadow:0 0 1px rgba(0,0,0,0);
-    position:relative;
-    -webkit-transition-duration:.3s;
-    transition-duration:.3s;
-    -webkit-transition-property:transform;
-    transition-property:transform
+
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform;
+    transition-property: transform
 }
-.hvr-float-shadow:before{
-    pointer-events:none;
-    position:absolute;
-    z-index:-1;
-    content:'';
-    top:100%;
-    left:5%;
-    height:10px;
-    width:90%;
-    opacity:0;
-    background:-webkit-radial-gradient(center,ellipse,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);
-    background:radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);
-    -webkit-transition-duration:.3s;
-    transition-duration:.3s;
-    -webkit-transition-property:transform,opacity;
-    transition-property:transform,opacity
+
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, .35) 0, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, .35) 0, rgba(0, 0, 0, 0) 80%);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity
 }
-.hvr-float-shadow:active,.hvr-float-shadow:focus,.hvr-float-shadow:hover{
-    -webkit-transform:translateY(-5px);
-    transform:translateY(-5px)
+
+.hvr-float-shadow:active, .hvr-float-shadow:focus, .hvr-float-shadow:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px)
 }
-.hvr-float-shadow:active:before,.hvr-float-shadow:focus:before,.hvr-float-shadow:hover:before{
-    opacity:1;
-    -webkit-transform:translateY(5px);
-    transform:translateY(5px)
+
+.hvr-float-shadow:active:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:hover:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px)
 }
+
 .packagesCard:hover {
     margin-top: 7%;
     margin-bottom: 9%;
-	-webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
-	-mox-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
-    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.5);
+    -mox-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.5);
 }
+
 .packagesCard {
     margin: 8% 0% 8% 0%;
+    min-width: 100%;
 }
-/* .packagesCard {
-    animation: margin-top, 1000ms;
-    animation: margin-bottom, 1000ms;
-} */
 
-/* Font Awesome */
-/* Default all icons to be blue */
-.fa,
-.fas,
-.far,
-.fab {
+.fa, .fas, .far, .fab {
     color: #17a2b8;
 }
+
 .fa-fire {
     text-align: right;
     font-size: 3rem;
     color: rgba(250, 44, 44, 0.8);
     -webkit-text-stroke: 1px darkred;
-    margin: -20px -15px 0px 0px;
+    margin: -20px -15px 0px -10px;
 }
 
-.fa-creative-commons-nc,
-.fa-comments,
-.fa-chalkboard-teacher,
-.fa-heart {
+.fa-creative-commons-nc, .fa-comments, .fa-chalkboard-teacher, .fa-heart {
     font-size: 5rem;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
+
 .fa-quote-left:before {
     text-align: left;
 }
+
 .fa-quote-right:before {
     text-align: right;
 }
-.fa-envelope,
-.fa-envelope:before {
+
+.fa-envelope, .fa-envelope:before {
     font-size: 3rem;
     margin-bottom: 15px;
 }
+
 /* End Font Awesome */
+
 .spaceBtm {
     margin-bottom: 25px;
 }
+
 .paddingTop {
     padding-top: 50px;
 }
+
 #faqContainer {
     margin-bottom: 25px;
 }
+
 #listBtn {
+    font-family: 'Roboto', sans-serif;
     margin: 25px 0px 25px 0px;
 }
+
 .headInfo {
-    margin: 125px 40px 40px 40px;
+    /* margin: 125px 40px 40px 40px; */
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #emailFounder {
     margin: 25px 0px 25px 0px;
 }
+
 #testimonial {
     padding: 50px;
 }
+
 #why {
     background: #f2f2f2;
     min-width: 100%;
-    padding: 50px;
+    padding: 20px;
 }
 
 #how {
@@ -190,7 +236,6 @@ a:hover {
     min-width: 100%;
     background: #f2f2f2;
     margin: 0px;
-
 }
 
 .steps {
@@ -199,16 +244,14 @@ a:hover {
     min-width: 100%;
     margin: 10px 0px 10px 0px;
 }
+
 .stepsCopy {
     font-size: 5rem;
     text-align: left;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bolder;
 }
-.horizontalLine {
-    border-top: 8px solid black;
-    width: 15rem;
-}
+
 .exploreStudiosCity {
     font-size: 25px;
 }
@@ -216,6 +259,7 @@ a:hover {
 .navbar {
     transition: top 0.3s;
 }
+
 nav {
     padding: 20px 25px 20px 40px!Important;
 }
@@ -229,24 +273,24 @@ nav {
 }
 
 #headerImage {
-    /* The image used */
-    background-image: url("../images/IMG_9835.jpg");
-    padding: 150px 5px 150px 5px;
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
+    background-image: url("../images/IMG_9835-black30.jpg");
+    padding: 200px 5px 150px 5px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px 0px 66px 0px;
+    margin: 0px;
 }
 
-/* #footer {
-    margin: 0px;
-    position: 0;
-    min-width: 100%;
-    flex-shrink: 0;
-} */
+.cardDesc {
+    font-size: 1.2rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 .topRow {
     margin-bottom: 30px;
@@ -256,158 +300,261 @@ nav {
     margin-bottom: 30px;
 }
 
-#minneapolisStudio {
-    padding: 150px 0px 150px 0px;
-    /* Background image with black gradient from bottom */
-    background-image: url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
+#exploreStudios {
+    display: block;
+    min-width: 95%;
 }
 
-#minneapolisStudio:hover {
+#minneapolisStudio {
     padding: 150px 0px 150px 0px;
-    /* Background image with black gradient from bottom */
-    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    background: linear-gradient(180deg, rgba(144, 144, 144, 0.27) 99.99%, rgba(255, 255, 255, 0) 100%), url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
+    font-size: 2rem;
+    position: relative;
 }
 
 #newYorkStudio {
     padding: 150px 0px 150px 0px;
-    /* Background image with black gradient from bottom */
-    background-image: url("../images/building-cc0-city-89485.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    background: linear-gradient(180deg, rgba(144, 144, 144, 0.27) 99.99%, rgba(255, 255, 255, 0) 100%), url("../images/building-cc0-city-89485.jpg");
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
-}
-
-#newYorkStudio:hover {
-    padding: 150px 0px 150px 0px;
-    /* Background image with black gradient from bottom */
-    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/building-cc0-city-89485.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
+    font-size: 2rem;
+    position: relative;
 }
 
 #losAngelesStudio {
     padding: 150px 0px 150px 0px;
-    /* Background image with black gradient from bottom */
-    background-image: url("../images/aerial-architectural-design-architecture-1036657.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
+    background: linear-gradient(180deg, rgba(144, 144, 144, 0.27) 99.99%, rgba(255, 255, 255, 0) 100%), url("../images/aerial-architectural-design-architecture-1036657.jpg");
     height: 100%;
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
+    font-size: 2rem;
+    position: relative;
 }
 
-#losAngelesStudio:hover {
-    padding: 150px 0px 150px 0px;
-    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/aerial-architectural-design-architecture-1036657.jpg");
-    /* Regular background with no effects */
-    /* background-image: url("../assets/images/IMG_0023.jpg"); */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
+#howDoesItWork {
+    min-width: 97%;
 }
 
-.cardHead {
-    padding-bottom: 0px;
+.price {
+    font-size: 15px;
 }
-.cardMain {
-    padding-top: 0px;
-}
+
 .subscriptionItem {
     text-align: left;
-    margin: 25px;
+    font-weight: 300;
+    margin: 20px;
+    padding-right: 25px;
 }
+
 .switchBilling:hover {
     color: rgba(250, 44, 44, 0.8);
 }
+
 .switchBilling {
     cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-    #losAngelesStudio,
-    #losAngelesStudio:hover {
-        padding: 150px 0px 150px 0px;
-        margin-top: 25px;
-        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/aerial-architectural-design-architecture-1036657.jpg");
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+#testimonial, .testimonialCopy {
+    font-weight: 300;
+}
 
-    #newYorkStudio,
-    #newYorkStudio:hover {
-        padding: 150px 0px 150px 0px;
-        /* Background image with black gradient from bottom */
-        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/building-cc0-city-89485.jpg");
-        /* Regular background with no effects */
-        /* background-image: url("../assets/images/IMG_0023.jpg"); */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-    }
+/*---------------------------*/
+/*            FAQ!           */
+/*---------------------------*/
 
-    #minneapolisStudio,
-    #minneapolisStudio:hover {
-        padding: 150px 0px 150px 0px;
-        /* Background image with black gradient from bottom */
-        background: linear-gradient(to bottom, transparent, rgb(0, 0, 0, 0.5)), url("../images/215-10th-Ave-S-736-Twilight-002.jpg");
-        /* Regular background with no effects */
-        /* background-image: url("../assets/images/IMG_0023.jpg"); */
-        height: 100%;
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-    }
+.parent-container {
+    padding: 0 20px 0 20px;
+    max-width: 800px;
+    width: 100%;
+}
 
-    #featuredStudiosHeader {
-        margin-top: 25px;
+.faq {
+    font-weight: 400;
+    list-style: none;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.faq li {
+    border-bottom: 1px solid #999999;
+    margin-bottom: 15px;
+}
+
+.faq li.active .answer {
+    max-height: 300px !important;
+    padding-bottom: 25px;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq li.active .question {
+    color: #808080;
+    transition: color 0.5s ease;
+}
+.answer {
+    font-weight: 300;
+}
+.faq .answer {
+    color: #090909;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding-bottom 0.5s ease;
+}
+
+.faq .plus-minus-toggle {
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 21px;
+    left: -40px;
+    top: 50%;
+    z-index: 2;
+}
+
+.faq .plus-minus-toggle:before, .faq .plus-minus-toggle:after {
+    background: #000;
+    content: '';
+    height: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    transition: transform 500ms ease;
+}
+
+.faq .plus-minus-toggle:after {
+    transform-origin: center;
+}
+
+.faq .plus-minus-toggle.collapsed:after {
+    transform: rotate(90deg);
+}
+
+.faq .plus-minus-toggle.collapsed:before {
+    transform: rotate(180deg);
+}
+
+.faq .question {
+    color: #090909;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: color 0.5s ease;
+}
+/*---------------------------*/
+/*         END  FAQ!         */
+/*---------------------------*/
+
+
+@media (max-width: 1200px) {
+    .testimonialCopy {
+        text-align: center!Important;
+    }
+    #testimonial {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
+@media (max-width: 991px) {
+    h2 {
+        font-size: 60px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+    .subscriptionItem, .price {
+        font-size: 30px;
+    }
+    .card-deck-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .card-deck {
+        display: block;
+        width: 100%;
+        margin: 0px 0px .75rem 0px;
+        table-layout: fixed;
+        border-spacing: 1.25rem 0;
+    }
+    .card-deck .card {
+        display: block;
+        margin-bottom: .75rem;
+    }
+    .fa-fire {
+        font-size: 6rem;
+    }
+    #listBtn, #basicBtn, #premiumBtn, #customBtn {
+        font-weight: 300;
+        font-size: 30px;
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #losAngelesStudio {
+        display: block;
+        padding: 150px 0px 150px 0px;
+        margin-top: 25px;
+    }
+    #newYorkStudio {
+        display: block;
+        padding: 150px 0px 150px 0px;
+    }
+    #minneapolisStudio {
+        display: block;
+        padding: 150px 0px 150px 0px;
+    }
+    #exploreStudios {
+        padding-bottom: 50px;
+    }
+    .subscriptionItem, .price {
+        font-size: 25px;
+    }
+    .faq .question {
+        font-size: 18px;
+    }
+}
 
 @media screen and (max-width: 575px) {
-    h4,
-    h5 {
+    h4, h5 {
         padding: 0px 20px 0px 20px;
+    }
+    h2 {
+        font-size: 55px;
+    }
+    .header {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .descrip {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    #howDoesItWork {
+        min-width: 100%;
+    }
+    .descrip {
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+    .subscriptionItem, .price {
+        font-size: 20px;
     }
 }
