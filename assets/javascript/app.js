@@ -7,7 +7,8 @@ $(document).ready(function () {
         window.location.replace(siteConstant + userSearch);
     });
     // Switch Basic Pricing 
-    $(document).on("click", ".switchBilling", function () {
+    $(document).on("click", ".switchBilling", function (event) {
+        event.preventDefault();
         // Display starts off on SEMI-ANNUAL PRICING
         // console.log("Current billing ID: " + this.id);
         switch (this.id) {
@@ -19,7 +20,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToMonthly");
                 // BASIC ANNUAL PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE ##
-                $("#basicBtn").attr("href", "##");
+                $('[data-cb-plan-id="basic-plan-semi-annual-2018"]').css("display", "none");
+                $('[data-cb-plan-id="basic-plan-annual-2018"]').css("display", "block");
                 break;
 
             case "switchToMonthly":
@@ -30,7 +32,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToSemiAnnual");
                 // BASIC MONTHLY PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE ###
-                $("#basicBtn").attr("href", "###");
+                $('[data-cb-plan-id="basic-plan-annual-2018"]').css("display", "none");
+                $('[data-cb-plan-id="basic-plan-monthly-2018"]').css("display", "block");
                 break;
 
             case "switchToSemiAnnual":
@@ -41,7 +44,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToAnnual");
                 // BASIC SEMI ANNUAL PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE #
-                $("#basicBtn").attr("href", "#");
+                $('[data-cb-plan-id="basic-plan-monthly-2018"]').css("display", "none");
+                $('[data-cb-plan-id="basic-plan-semi-annual-2018"]').css("display", "block");
                 break;
             case "switchToAnnualPremium":
                 $("#premiumSemiAnnualPrice").html("<h2>$139/month</h2><h6>Annual</br>Billed every year - save 30%</h6>")
@@ -51,7 +55,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToMonthlyPremium");
                 // PREMIUM ANNUAL PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE #####
-                $("#premiumBtn").attr("href", "#####");
+                $('[data-cb-plan-id="premium-plan-semi-annual-2018"]').css("display", "none");
+                $('[data-cb-plan-id="premium-plan-annual-2018"]').css("display", "block");
                 break;
 
             case "switchToMonthlyPremium":
@@ -62,7 +67,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToSemiAnnualPremium");
                 // PREMIUM MONTHLY PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE ######
-                $("#premiumBtn").attr("href", "######");
+                $('[data-cb-plan-id="premium-plan-annual-2018"]').css("display", "none");
+                $('[data-cb-plan-id="premium-plan-monthly-2018"]').css("display", "block");
                 break;
 
             case "switchToSemiAnnualPremium":
@@ -73,7 +79,8 @@ $(document).ready(function () {
                     .addClass("switchBilling")
                     .attr("id", "switchToAnnualPremium");
                 // PREMIUM SEMI ANNUAL PRICING LINK GOES BELOW BETWEEN QUOTES, REPLACE ####
-                $("#premiumBtn").attr("href", "####");
+                $('[data-cb-plan-id="premium-plan-monthly-2018"]').css("display", "none");
+                $('[data-cb-plan-id="premium-plan-semi-annual-2018"]').css("display", "block");
                 break;
         };
     });

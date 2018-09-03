@@ -461,6 +461,29 @@ nav {
 /*         END  FAQ!         */
 /*---------------------------*/
 
+/*---------------------------*/
+/*     Chargebee Links       */
+/*---------------------------*/
+/* BASIC BUTTONS */
+[data-cb-plan-id="basic-plan-semi-annual-2018"] {
+    display: block;
+}
+[data-cb-plan-id="basic-plan-annual-2018"] {
+    display: none;
+}
+[data-cb-plan-id="basic-plan-monthly-2018"] {
+    display: none;
+}
+/* PREMIUM BUTTONS */
+[data-cb-plan-id="premium-plan-semi-annual-2018"] {
+    display: block;
+}
+[data-cb-plan-id="premium-plan-annual-2018"] {
+    display: none;
+}
+[data-cb-plan-id="premium-plan-monthly-2018"] {
+    display: none;
+}
 
 @media (max-width: 1200px) {
     .testimonialCopy {
